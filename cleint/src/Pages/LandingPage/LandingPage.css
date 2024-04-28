@@ -1,0 +1,157 @@
+.wrapper {
+  background: rgba(55, 50, 50, 0.9);
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.title > span {
+  color: rgb(255, 102, 0);
+}
+.title > span:nth-child(2) {
+  text-decoration: underline;
+  color: white;
+}
+.title .chatgpt__image {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.content {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  margin: 1rem 0;
+}
+.content > span {
+  background: rgb(255, 102, 0);
+  padding: 0.2rem;
+}
+
+.benefits__div {
+  padding: 2rem;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.icon {
+  color: rgb(255, 102, 0);
+  margin-right: 0.2rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.flex div:nth-child(1) {
+  background: rgb(85, 82, 82);
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(2, 0.4fr);
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 9.4rem;
+  flex: 0.2;
+}
+.flex div:nth-child(1) > div {
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: flex-start;
+}
+
+.flex > div:nth-child(2) {
+  flex: 0.5;
+}
+
+.flex > div > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.grid__icons {
+  color: rgb(255, 102, 0);
+  margin-right: 0.3rem;
+}
+
+.professional__btn {
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 32rem;
+  margin: 1rem auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.professional__btn > p > span {
+  text-decoration: line-through;
+}
+
+.bonuses {
+  margin: 1rem auto;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 2;
+  font-size: 2rem;
+}
+.bonuses > span {
+  color: yellow;
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companies > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex div:nth-child(1) {
+    grid-template-columns: 1fr;
+    width: fit-content;
+    height: fit-content;
+  }
+  .flex > div:nth-child(2) {
+    width: 100%;
+  }
+}
