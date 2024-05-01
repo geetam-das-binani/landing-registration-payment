@@ -8,8 +8,8 @@ import twilio from "twilio";
 
 dotenv.config();
 
-const accountSid = process.env.ACCOUNT_SID;
-const authToken = process.env.AUTH_TOKEN;
+const accountSid = process.env.ACCOUNT_SID || '';
+const authToken = process.env.AUTH_TOKEN || '';
 export const client = twilio(accountSid, authToken);
 
 const connect = async () => {
