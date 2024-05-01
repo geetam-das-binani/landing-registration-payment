@@ -1,0 +1,59 @@
+.otp__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.otp__box {
+  width: 400px;
+  height: 220px;
+
+  border-radius: 10px;
+  box-shadow: #ccc 0px 0px 5px;
+}
+
+.otp__box h2 {
+  text-align: center;
+  margin: 1rem;
+}
+.input__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.input__boxes > input {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.action {
+    text-align: center;
+}
+.otp__button{
+ 
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.otp__button:hover{
+  cursor: pointer;
+  background-color: #0069d9;
+  transition: all .5s;
+}

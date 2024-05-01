@@ -15,8 +15,10 @@ import privacy from "../../images/privacy.png";
 import india from "../../images/india.webp";
 import Card from "../../components/Card/Card";
 import Input from "../../components/Input/Input";
+import toast from "react-hot-toast";
 const RegistrationPage = () => {
   const { loading, error } = useSelector((state) => state.user);
+ 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [userInfo, setUserInfo] = useState({
@@ -50,7 +52,8 @@ const RegistrationPage = () => {
         return;
       }
       dispatch(registerUser(data));
-      navigate("/payment-page");
+      toast.success("Registration successful:Please verify you otp");
+      navigate("/verify-otp-page");
     } catch (error) {
       dispatch(registerUserFail(error.message));
     }
@@ -131,7 +134,7 @@ const RegistrationPage = () => {
             <IoLogoWhatsapp className="whatsapp__icon" />
           </p>
           <button disabled={loading} className="register__btn">
-            Next
+            {loading ? "Please Wait..." : "Next"}
           </button>
           <h5 className="terms">
             By proceeding you agree to our <span>Terms</span>,
